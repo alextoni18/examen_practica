@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Título Header */
+.brand-title span {
+    color: #dc3545;
+}
+
+/* Banner Principal (Hero Oscuro) */
+.hero-section {
+    position: relative;
+    height: 420px;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Filtro negro sobre el header */
+}
+
+.brand-hero-title {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    letter-spacing: 2px;
+}
+
+.hero-subtitle {
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+/* Filtro blanco para el icono de cubiertos en fondo negro */
+.filter-white {
+    filter: brightness(0) invert(1);
+}
+
+.size-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Especialidades (Tarjetas e Imágenes) */
+.img-specialty {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .img-specialty {
+    transform: scale(1.05);
+}
+
+.price-card {
+    transition: border-color 0.3s ease;
+}
+
+.price-card:hover {
+    border-color: #dc3545 !important;
+}
+
+/* Banner Rojo Oscuro de Ubicación */
+.location-banner {
+    background-color: #b02a37;
+}

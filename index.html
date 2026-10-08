@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Pizza - Examen Práctico</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu archivo CSS ajustado -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- NAV / ENCABEZADO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-secondary px-3 px-md-5">
+        <div class="container-fluid">
+            <a class="navbar-brand brand-title fw-bold text-uppercase fs-3" href="#">
+                Master <span class="text-danger">Pizza</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-danger text-white px-3 rounded" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#acerca">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light px-3" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / PORTADA -->
+    <header id="inicio" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="hero-content z-1 container px-3">
+            <h1 class="display-2 fw-bold text-uppercase brand-hero-title">MASTER PIZZA</h1>
+            <p class="h3 text-uppercase text-warning hero-subtitle tracking-widest fw-bold">LOS MEJORES SABORES ESPECIALMENTE PARA TI</p>
+        </div>
+    </header>
+
+    <!-- SECCIÓN ACERCA DE -->
+    <section id="acerca" class="py-5 bg-dark border-bottom border-secondary">
+        <div class="container text-center max-w-75">
+            <h2 class="text-danger fw-bold text-uppercase mb-3">Nuestra Historia</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="fs-5 text-light-50 leading-relaxed">
+                        En <strong>Master Pizza</strong> elaboramos pizzas artesanales con la masa más crujiente y los mejores ingredientes frescos desde hace más de 10 años. Nuestra pasión por la tradición italiana y la excelencia en el sabor nos ha convertido en los favoritos de la ciudad. ¡Cada rebanada está hecha con amor y dedicación!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRECIOS / TAMAÑOS -->
+    <section class="py-5 bg-black border-bottom border-secondary">
+        <div class="container">
+            <div class="row text-center gy-4">
+                <div class="col-md-4">
+                    <div class="price-card p-4 rounded border border-secondary bg-dark text-white">
+                        <img src="img/Cubiertos.png" alt="Icono Cubiertos" class="size-icon mb-3 filter-white">
+                        <h4 class="fw-bold text-uppercase">CHICA</h4>
+                        <p class="text-danger fw-bold fs-4 mb-0">$ 90.00</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-card p-4 rounded border border-secondary bg-dark text-white">
+                        <img src="img/Cubiertos.png" alt="Icono Cubiertos" class="size-icon mb-3 filter-white">
+                        <h4 class="fw-bold text-uppercase">MEDIANA</h4>
+                        <p class="text-danger fw-bold fs-4 mb-0">$ 120.00</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-card p-4 rounded border border-secondary bg-dark text-white">
+                        <img src="img/Cubiertos.png" alt="Icono Cubiertos" class="size-icon mb-3 filter-white">
+                        <h4 class="fw-bold text-uppercase">FAMILIAR</h4>
+                        <p class="text-danger fw-bold fs-4 mb-0">$ 180.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MENU Y ESPECIALIDADES AMPLIA -->
+    <section id="menu" class="py-5 bg-dark">
+        <div class="container text-center">
+            <h2 class="fw-bold text-uppercase mb-2 text-white">NUESTROS SABORES Y ESPECIALIDADES</h2>
+            <p class="text-muted mb-5">Elige entre nuestras mejores combinaciones artesanales</p>
+            
+            <!-- TARJETAS PRINCIPALES CON TUS IMÁGENES -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white border border-secondary rounded overflow-hidden shadow">
+                        <img src="img/peperoni.jpg" class="card-img-top img-specialty" alt="Pizza Peperoni">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger fw-bold text-uppercase">Clásica Pepperoni</h5>
+                            <p class="card-text text-secondary small">Salsa de tomate casera, queso mozzarella fundido y abundante pepperoni italiano.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white border border-secondary rounded overflow-hidden shadow">
+                        <img src="img/hawaiiana.jpg" class="card-img-top img-specialty" alt="Pizza Hawaiiana">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger fw-bold text-uppercase">Hawaiiana Master</h5>
+                            <p class="card-text text-secondary small">La combinación perfecta entre jamón selecto, piña agridulce y abundante queso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 bg-black text-white border border-secondary rounded overflow-hidden shadow">
+                        <img src="img/vegetariana.jpg" class="card-img-top img-specialty" alt="Pizza Vegetariana">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger fw-bold text-uppercase">Vegetariana Premium</h5>
+                            <p class="card-text text-secondary small">Pimientos frescos, champiñones, aceitunas negras, cebolla morada y brocoli horneado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÁS VARIETIES EN FORMATO LISTA/MENÚ EDITABLE -->
+            <div class="row gy-4 text-start justify-content-center">
+                <div class="col-md-6">
+                    <div class="p-4 bg-black rounded border border-secondary">
+                        <h4 class="text-warning text-uppercase mb-3 border-bottom border-secondary pb-2">Otras Especialidades</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <strong class="text-white">Pizza Carnes Frías</strong>
+                                    <div class="text-muted small">Pepperoni, jamón, tocino y salchicha italiana</div>
+                                </div>
+                                <span class="text-danger fw-bold">$120.00</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <strong class="text-white">Pizza 4 Quesos</strong>
+                                    <div class="text-muted small">Mozzarella, parmesano, queso azul y provolone</div>
+                                </div>
+                                <span class="text-danger fw-bold">$115.00</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div>
+                                    <strong class="text-white">Pizza Mexicana</strong>
+                                    <div class="text-muted small">Chorizo, carne molida, jalapeños y cebolla</div>
+                                </div>
+                                <span class="text-danger fw-bold">$110.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="p-4 bg-black rounded border border-secondary">
+                        <h4 class="text-warning text-uppercase mb-3 border-bottom border-secondary pb-2">Complementos y Bebidas</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <strong class="text-white">Pan de Ajo con Queso</strong>
+                                    <div class="text-muted small">4 piezas doradas al horno con orégano</div>
+                                </div>
+                                <span class="text-danger fw-bold">$45.00</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <strong class="text-white">Alitas BBQ / Búfalo</strong>
+                                    <div class="text-muted small">8 piezas acompañadas de aderezo ranch</div>
+                                </div>
+                                <span class="text-danger fw-bold">$85.00</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div>
+                                    <strong class="text-white">Refresco Familiar 2L</strong>
+                                    <div class="text-muted small">Coca-Cola, Sprite o Fanta</div>
+                                </div>
+                                <span class="text-danger fw-bold">$35.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN UBICACIÓN / CONTACTO -->
+    <section id="contacto" class="location-banner py-4 text-center text-white">
+        <div class="container">
+            <h4 class="fw-bold text-uppercase mb-1">Encuéntranos</h4>
+            <p class="mb-0 fs-5">Av. Central Poniente #234, Colonia Centro</p>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-black text-white text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-1 small">© Copyrights <strong>Master Pizza</strong>. Todos los Derechos Reservados</p>
+            <p class="mb-0 small text-secondary">Creado por <span class="text-danger fw-semibold">Tu Nombre Completo</span></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS
